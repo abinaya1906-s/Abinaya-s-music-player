@@ -1,0 +1,82 @@
+body {
+    background: linear-gradient(to right, #4380b3, #814572);
+    font-family: Arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.player {
+    width: 300px;
+    background: #111;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.album img {
+    width: 200px;
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+
+.album img:hover {
+    transform: scale(1.05);
+}
+
+.progress {
+    background: #444;
+    height: 6px;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+.progress span {
+    display: block;
+    width: 50%;
+    height: 100%;
+    background: #1db954;
+    border-radius: 10px;
+}
+
+.controls button {
+    background: none;
+    border: none;
+    color: rgb(253, 255, 255);
+    font-size: 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.controls button:hover {
+    transform: scale(1.2);
+}
+
+.play {
+    font-size: 26px;
+}
+
+.playlist {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.playlist li {
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.playlist li:hover {
+    background: #3f0ec7;
+}
+
+.playlist .active {
+    background: #1db94c;
+    color: rgb(0, 0, 0);
+}
